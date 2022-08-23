@@ -47,7 +47,7 @@ exports.getAllProducts = async (req, res, next) => {
     .search()
     .filter();
 
-  let products = await apiFeature.query.clone();
+  let products = await apiFeature.query;
 
   let filteredProductsCount = products.length;
 
